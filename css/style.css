@@ -13,6 +13,12 @@ body {
   font-family: Bai Jamjuree;
 }
 
+.header::after{
+  content: url(/images/bg-header-mobile.png);
+  top: -10px;
+  position: absolute;
+  /* background-image: url(/images/bg-header-desktop.png); */
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -72,6 +78,11 @@ body {
   background-color: var(--Light-Blue);
 }
 @media screen and (min-width:760px){
+.header::after{
+  content: url(/images/bg-header-desktop.png);
+  top: -10px;
+  position: absolute;
+}
 .header{
   width: 40%;
   position: relative;
